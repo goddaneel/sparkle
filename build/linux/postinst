@@ -13,8 +13,12 @@ fi
 sed -i 's/Name=sparkle/Name=Sparkle/' '/usr/share/applications/sparkle.desktop'
 
 chmod 4755 '/opt/sparkle/chrome-sandbox' || true
-chmod +sx /opt/sparkle/resources/sidecar/mihomo
-chmod +sx /opt/sparkle/resources/sidecar/mihomo-alpha
+
+chmod a-s /opt/sparkle/resources/sidecar/mihomo
+chmod a-s /opt/sparkle/resources/sidecar/mihomo-alpha
+
+chmod +x /opt/sparkle/resources/sidecar/mihomo
+chmod +x /opt/sparkle/resources/sidecar/mihomo-alpha
 
 if hash update-mime-database 2>/dev/null; then
     update-mime-database /usr/share/mime || true
