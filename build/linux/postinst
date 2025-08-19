@@ -10,17 +10,7 @@ else
     ln -sf '/opt/sparkle/sparkle' '/usr/bin/sparkle'
 fi
 
-sed -i 's/Name=sparkle/Name=Sparkle/' '/usr/share/applications/sparkle.desktop'
-
-chmod 4755 '/opt/sparkle/chrome-sandbox' || true
+chmod 0755 '/opt/sparkle/chrome-sandbox' || true
 chmod +x /opt/sparkle/resources/files/sysproxy
-chmod +sx /opt/sparkle/resources/sidecar/mihomo
-chmod +sx /opt/sparkle/resources/sidecar/mihomo-alpha
-
-if hash update-mime-database 2>/dev/null; then
-    update-mime-database /usr/share/mime || true
-fi
-
-if hash update-desktop-database 2>/dev/null; then
-    update-desktop-database /usr/share/applications || true
-fi
+chmod +x /opt/sparkle/resources/sidecar/mihomo
+chmod +x /opt/sparkle/resources/sidecar/mihomo-alpha
