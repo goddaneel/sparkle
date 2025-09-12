@@ -1,5 +1,9 @@
-# Sparkle-lite
+# Sparkle-Lite
 去除特权功能的 Sparkle 分支，测试中，可能存在恶性 Bug，请勿使用。
+
+## 附属仓库
+- [Sparkle Patch](https://github.com:goddaneel/sparkle-patch)
+    包含一组基于 Bubblewrap 工具的测试构建沙盒。
 
 ## 此分支的修改
 |修改内容|修改范围|产生影响|影响平台|上游版本|分支版本|
