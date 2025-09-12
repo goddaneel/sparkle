@@ -10,7 +10,7 @@ else
     ln -sf '/opt/sparkle/sparkle' '/usr/bin/sparkle'
 fi
 
-chmod +x /opt/sparkle/resources/files/sysproxy
+chmod a+x /opt/sparkle/resources/files/sysproxy
 
 if hash update-mime-database 2>/dev/null; then
     update-mime-database /usr/share/mime || true
