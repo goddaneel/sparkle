@@ -11,6 +11,11 @@ else
 fi
 
 
+chmod -c -R -P go-w "/opt/sparkle"
+chmod -c -R -P go-w "/usr/share/doc/sparkle"
+chmod -c go-w "/usr/share/applications/sparkle.desktop"
+chmod -c go-w "/usr/share/icons/hicolor/512x512/apps/sparkle.png"
+
 chmod -c a-s "/opt/sparkle/chrome-sandbox"
 chmod -c a-s "/opt/sparkle/resources/files/sysproxy"
 chmod -c a-s "/opt/sparkle/resources/sidecar/mihomo"
