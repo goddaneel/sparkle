@@ -1,5 +1,5 @@
 appId: sparkle.app
-productName: Sparkle
+productName: sparkle
 directories:
   buildResources: build
 files:
