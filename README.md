@@ -10,8 +10,9 @@
 ## 修改日志
 |修改内容|修改范围|产生影响|影响平台|上游版本|分支版本|
 |-|-|-|-|-|-|
-|修改版本号规则|修改 package.json 配置|与上游项目版本号规则有差异，不能混装|Linux x86|1.6.14|1.6.14-lite1|
+|修改版本号规则|修改 package.json 配置|与上游项目版本号规则有差异，不能混装|Linux x86|1.6.14|1.6.14-lite3|
 |去除 mihomo 内核的 setuid 配置|修改 postinst 脚本|可能影响所有需要提权的内核功能（TUN、内置更新等）||||
 |去除 chrome-sandbox 的 setuid 配置||可能影响旧版本 Electron 内置沙盒||||
 |去除所有文件的 go+w 写权限||未知||||
 |将 `productName` 从 `Sparkle` 改为 `sparkle`|修改 electron-builder.yml 配置|其他平台构建名称会发生改变||||
+|将图标文件 `icon.ico` 和 `icon.png` 修改为圆形|`resources/` 和 `build/` 目录下|Linux 端桌面和托盘图标改变（其他端未测试）||||
